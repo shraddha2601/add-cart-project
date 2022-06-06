@@ -2,8 +2,9 @@
     count = 0;
     
 
-    
+    // console.log("hello");
     $(".cart-btn").on("click",function(){
+        // console.log("hello");
         count++;
         var img = $(this).parent().find(".dish-img").attr('src');
         var name = $(this).parent().find(".name").text();
@@ -70,4 +71,5 @@
     function total_price(){
     
     }
+
 

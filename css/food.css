@@ -72,6 +72,9 @@ body{font-family: pageFont;}
 
 .p-img{height: 80px;width:80px;object-fit: cover;}
 .main-product-box .imageBox{display: flex;gap: 25px;align-items: center;margin-bottom: 15px;}
+@media(max-width:575px){
+.main-product-box .imageBox{flex-direction: column;gap: 0;}
+}
 
 
 
