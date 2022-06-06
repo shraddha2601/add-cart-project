@@ -1,0 +1,87 @@
+@font-face {
+    font-family: title;
+    src: url(../fonts/austein_script/Austein.ttf);
+}
+@font-face {
+    font-family: pageFont;
+    src: url(../fonts/Hind/Hind-Regular.ttf);
+}
+
+body{font-family: pageFont;}
+:root{
+    --primary-color:#2e195e;
+}
+.text-theme{color:var(--primary-color)}
+.color-gray{color: #686464;}
+.font-20{font-size: 20px;}
+.letter-spacing{letter-spacing: 3px;}
+.bg-theme{background-color: var(--primary-color);}
+/* navbar-css start*/
+.main-navbar .navbar-brand{font-family: title;color: #000;font-size: 24px;}  
+.main-navbar .nav-item{position: relative;}
+.main-navbar .nav-item::after{position: absolute;content: '';height: 3px;width: 0;background-color: #e4adc8;}
+.main-navbar .nav-item:hover::after{width:95%;transition: 0.5s all;}
+.main-navbar .nav-item .nav-link{color:var(--primary-color);letter-spacing: 3px;}
+.main-navbar .navbar {background-color: #fff;position: fixed;top: 0;left: 0;z-index: 122314;width: 100%;}
+.cart-main .cart-img{height: 30px;}
+.collection{position: relative;}
+/* .swhite-box{height: 100vh;width:800px;background-color: white;position: absolute;top: -7px;right: -1rem;z-index: 100;transform: translateX(100%);} */
+.cart-icon-btn.cart-show .swhite-box{transform: translateX(0%);transition: 5s all;overflow: auto;}
+.cart-main .cart-btn{background-color: transparent;}
+/* .cart-main .cart-icon-close-btn{display: none;} */
+/* navbar-css end */
+
+/* main-section css start */
+.main-section{height: 100vh;}
+.main-section .main-box{height: 100%;width: 100%;overflow: hidden;position: relative;}
+.main-section .main-box::before{position: absolute;content: '';background-color: #000;height: 100%;width: 100%;top: 0;left: 0;right: 0;bottom: 0;z-index: 10;opacity: 0.4;}
+.main-section .main-box .main-img{object-position: 0 -180px;transition: 10s ease-in;position: relative;}
+.main-section .main-box:hover .main-img{transform: scale(1.5,1.5);transition: 20s ease-out;}
+
+@media(max-width:991px){
+    .main-section .main-box .main-img{object-position: 0 ;transition: 0}
+}
+/* main-section css end */
+
+/* about us section css start */
+.about-us-section .main-box{height: 350px;width: 450px;}
+.about-us-section .main-box .main-img{height: 100%;width: 100%;object-fit: cover;}
+.about-us-section .main-ul{line-height: 30px;}
+/* about us section css end */
+
+/* popular dish section css start */
+.popular-dish-section .main-img{height: 250px;width: 250px;object-fit: cover;cursor: pointer;transition: 0.4s all;position: relative;overflow: hidden;}
+.popular-dish-section .main-img::before{position: absolute;content: '';background-color: black;height: 250px;width: 250px;top: 0;left: 0;right: 0;opacity: 0.5;bottom: 0;z-index: 10;transition: 0.4s all;}
+.popular-dish-section .main-img:hover::before{opacity: 0;transition: 0.4s all;}
+.popular-dish-section .main-img .dish-img{height:100%;width:100%;object-fit: cover;transition: 0.4s all;}
+.popular-dish-section .main-img:hover .dish-img{transform: scale(1.1);transition: 0.4s all;}
+.popular-dish-section .img-gap{gap:25px;}
+.popular-dish-section .img-detail .name{letter-spacing: 2px;}
+.popular-dish-section .nav-tabs .nav-item{position: relative;}
+.popular-dish-section .nav-tabs .nav-item::after{position: absolute;content: '';height: 3px;width: 0;background-color: #e4adc8;}
+.popular-dish-section .nav-tabs .nav-item:hover::after{width:95%;transition: 0.5s all;}
+.popular-dish-section .nav-tabs .nav-item.active::after{width:95%;transition: 0.5s all;}
+.popular-dish-section .nav-tabs .nav-item .nav-link{color:var(--primary-color)}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{border: 0;}
+.nav-tabs .nav-link{margin: 0;border: 0;}
+.popular-dish-section .cart-btn{border: 0;position: relative;}
+.popular-dish-section .cart-btn::after{position: absolute;content: "";height: 3px;width: 20%;background-color: #e4adc8;bottom: 0;left: 0;transition: 0.4s all;}
+.popular-dish-section .cart-btn:hover::after{width: 100%;transition: 0.5s all;}
+/* popular dish section css end */
+
+.p-img{height: 80px;width:80px;object-fit: cover;}
+.main-product-box .imageBox{display: flex;gap: 25px;align-items: center;margin-bottom: 15px;}
+
+
+
+/* footer css start */
+.footer{background-color: #eee;}
+.footer .footer-link{color: #000;position: relative;margin-bottom: 6px;display: inline-block;text-decoration: none;}
+.footer .footer-link::after{height: 1px;width: 0%;background-color: #000;position: absolute;content: '';bottom: 3px;left: 0;}
+.footer .footer-link:hover::after{width: 100%;transition: 0.4s all;margin: 0 auto;}
+/* footer css end */
+
+/* contact us section css start */
+.contact-us-section{background-color: #2e195e14;}
+/* contact us section css end */
