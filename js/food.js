@@ -4,12 +4,17 @@
 
     // console.log("hello");
     $(".cart-btn").on("click",function(){
+
         // console.log("hello");
         count++;
         var img = $(this).parent().find(".dish-img").attr('src');
         var name = $(this).parent().find(".name").text();
         var price = $(this).parent().find(".price").text();
+        var d_id = $(this).parent().attr("data-id");
+        console.log(d_id);
 
+
+        
         var newhtml = `<div class="main-content">
                 <div class="imageBox">
                     <img src="${img}" class="p-img" alt="">
@@ -70,6 +75,6 @@
 
     function total_price(){
     
-    }
+    }   
 
 
