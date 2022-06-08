@@ -1,6 +1,10 @@
 
     count = 0;
     
+  
+
+
+
 
     // console.log("hello");
     $(".cart-btn").on("click",function(){
@@ -31,15 +35,16 @@
         dlt_record();
         total_price();
 
+        
     })
     function item_count(){
         var res = $(".main-product-box").children().length;
         $(".badge-num").text(res);
     }
 
-    // $(".cart-icon-btn").on("click",function(){
-    //     $(".cart-icon-btn").addClass("cart-show")
-    // })
+    $(".cart-icon-btn").on("click",function(){
+        $(".cart-icon-btn").addClass("cart-show")
+    })
 
 
     function num_change(){
@@ -77,7 +82,10 @@
     
     }   
 
-
+//  function item_count(){
+//         var res = $(".main-product-box").children().length;
+//         $(".badge-num").text(res);
+//     }
 class MyHeader extends HTMLElement{
     connectedCallback(){
         this.innerHTML = ` 
@@ -120,13 +128,13 @@ class MyHeader extends HTMLElement{
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Your Cart</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
-                                </button>
+                                </button> 
                               </div>
                               <div class="modal-body justify-content-center">
-                                <div class="container-fluid pt-3">
+                                <div class="container-fluid pt-3 justify-content-center">
                                     <div class="main-product-box">
                                     </div>
                                 </div>
@@ -135,7 +143,6 @@ class MyHeader extends HTMLElement{
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" onclick="item_count()" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" >Save changes</button>
                               </div>
                             </div>
                           </div>
