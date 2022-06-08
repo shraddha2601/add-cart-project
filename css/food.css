@@ -71,10 +71,12 @@ body{font-family: pageFont;}
 /* popular dish section css end */
 
 .p-img{height: 80px;width:80px;object-fit: cover;}
-.main-product-box .imageBox{display: flex;gap: 25px;align-items: center;margin-bottom: 15px;}
+.main-product-box .imageBox{display: flex;gap: 25px;align-items: center;margin-bottom: 15px;border: 1px solid #e3e3e3;padding: 20px;}
 @media(max-width:575px){
 .main-product-box .imageBox{flex-direction: column;gap: 0;}
 }
+
+.main-product-box .main-content {}
 
 
 

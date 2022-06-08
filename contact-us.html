@@ -18,70 +18,9 @@
 </head>
 <body>
     
-    <div class="main-navbar">
-        <nav class="navbar navbar-expand-lg align-items-center">
-            <a class="navbar-brand" href="food.html"><span>CUISINE</span>
-                <!-- <img src="image/organic-food-restaurant-logo/4200784.jpg" class="logo img-fluid" alt=""> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto ml-5">
-                <li class="nav-item">
-                  <a class="nav-link text-theme" href="food.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-theme" href="cuisine.html">Cuisine</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-theme" href="about-us.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-theme" href="contact-us.html">Contact Us</a>
-                </li>
-                
-              </ul>
-              <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form> -->
-            </div>
-            <div class="collection">
-                <div class="cart-main">
-                    <button class="border-0 cart-icon-btn" type="button" data-toggle="modal" data-target="#exampleModal"><img src="image/trolley.png" class="cart-img" alt=""><span class="badge badge-num"></span></button>
-                    <!-- <button class="border-0 cart-icon-close-btn"><img src="image/close.png" class="cart-img" alt=""> -->
-                    <div class="swhite-box modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <div class="container-fluid pt-3">
-                                    <div class="main-product-box">
-                                    </div>
-                                </div>
-                                <button class="checkout-btn">Checkout</button>
-                                <!-- <p>Checkout : <span class="total-price"></span></p> -->
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" onclick="item_count()" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" >Save changes</button>
-                              </div>
-                            </div>
-                          </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <my-header>
+        
+    </my-header>
     <section class="contact-us-section py-5 mt-5">
         <div class="container">
            <div class="row">
@@ -123,37 +62,8 @@
 
         </div>
     </section>
-    <footer class="footer py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <p class="h4 mb-0">Quick Links</p>
-                    <ul class="footer-ul list-unstyled">
-                        <li class="footer-li"><a class="footer-link" href="javascript:void(0)">Help</a></li>
-                        <li class="footer-li"><a class="footer-link" href="javascript:void(0)">Privacy Policy</a></li>
-                        <li class="footer-li"><a class="footer-link" href="javascript:void(0)">Copyright</a></li>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <p class="h4 mb-0">Quick Links</p>
-                    <ul class="footer-ul list-unstyled">
-                        <li class="footer-li"><a class="footer-link" href="food.html">Home</a></li>
-                        <li class="footer-li"><a class="footer-link" href="cuisine.html">Cuisine</a></li>
-                        <li class="footer-li"><a class="footer-link" href="about-us.html">About Us</a></li>
-                        <li class="footer-li"><a class="footer-link" href="contact-us.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <p class="h4 mb-0">Contact Us</p>
-                    <ul class="footer-ul list-unstyled">
-                        <li><span>Ahmedabad, Gujarat</span></li>
-                        <li class="footer-li"><a class="footer-link" href="javascript:void(0)">+91 99999 99999</a></li>
-                        <li class="footer-li"><a class="footer-link" href="javascript:void(0)">info@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <my-footer></my-footer>
+
 </body>
 <script src="/js/food.js"></script>
 </html>
